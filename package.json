@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-base-kumaraswamy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Kumaraswamy's double bounded distributed pseudorandom numbers.",
   "license": "Apache-2.0",
   "author": {
