@@ -440,6 +440,14 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/random-array/kumaraswamy`][@stdlib/random/array/kumaraswamy]</span><span class="delimiter">: </span><span class="description">create an array containing pseudorandom numbers drawn from Kumaraswamy's double bounded distribution.</span>
+-   <span class="package-name">[`@stdlib/random-iter/kumaraswamy`][@stdlib/random/iter/kumaraswamy]</span><span class="delimiter">: </span><span class="description">create an iterator for generating pseudorandom numbers drawn from a Kumaraswamy's double bounded distribution.</span>
+-   <span class="package-name">[`@stdlib/random-streams/kumaraswamy`][@stdlib/random/streams/kumaraswamy]</span><span class="delimiter">: </span><span class="description">create a readable stream for generating pseudorandom numbers drawn from a Kumaraswamy's double bounded distribution.</span>
+
 </section>
 
 <!-- /.related -->
@@ -516,6 +524,16 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [kumaraswamy]: https://en.wikipedia.org/wiki/Kumaraswamy_distribution
 
 [@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
+
+<!-- <related-links> -->
+
+[@stdlib/random/array/kumaraswamy]: https://github.com/stdlib-js/random-array-kumaraswamy
+
+[@stdlib/random/iter/kumaraswamy]: https://github.com/stdlib-js/random-iter-kumaraswamy
+
+[@stdlib/random/streams/kumaraswamy]: https://github.com/stdlib-js/random-streams-kumaraswamy
+
+<!-- </related-links> -->
 
 </section>
 
