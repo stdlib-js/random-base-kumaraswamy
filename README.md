@@ -35,38 +35,32 @@ limitations under the License.
 
 > [Kumaraswamy's double bounded][kumaraswamy] distributed pseudorandom numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-base-kumaraswamy
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-kumaraswamy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-kumaraswamy@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var kumaraswamy = require( 'path/to/vendor/umd/random-base-kumaraswamy/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-kumaraswamy@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.kumaraswamy;
-})();
-</script>
+var kumaraswamy = require( '@stdlib/random-base-kumaraswamy' );
 ```
 
 #### kumaraswamy( a, b )
@@ -410,13 +404,8 @@ var o = rand.toJSON();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-kumaraswamy@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var kumaraswamy = require( '@stdlib/random-base-kumaraswamy' );
 
 var seed;
 var rand;
@@ -443,11 +432,6 @@ rand = kumaraswamy.factory( 2.0, 2.0, {
 for ( i = 0; i < 100; i++ ) {
     console.log( rand() );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -544,15 +528,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [kumaraswamy]: https://en.wikipedia.org/wiki/Kumaraswamy_distribution
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/umd
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
 <!-- <related-links> -->
 
-[@stdlib/random/array/kumaraswamy]: https://github.com/stdlib-js/random-array-kumaraswamy/tree/umd
+[@stdlib/random/array/kumaraswamy]: https://github.com/stdlib-js/random-array-kumaraswamy
 
-[@stdlib/random/iter/kumaraswamy]: https://github.com/stdlib-js/random-iter-kumaraswamy/tree/umd
+[@stdlib/random/iter/kumaraswamy]: https://github.com/stdlib-js/random-iter-kumaraswamy
 
-[@stdlib/random/streams/kumaraswamy]: https://github.com/stdlib-js/random-streams-kumaraswamy/tree/umd
+[@stdlib/random/streams/kumaraswamy]: https://github.com/stdlib-js/random-streams-kumaraswamy
 
 <!-- </related-links> -->
 
