@@ -35,20 +35,32 @@ limitations under the License.
 
 > [Kumaraswamy's double bounded][kumaraswamy] distributed pseudorandom numbers.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-base-kumaraswamy
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import kumaraswamy from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-kumaraswamy@esm/index.mjs';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { factory } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-kumaraswamy@esm/index.mjs';
+var kumaraswamy = require( '@stdlib/random-base-kumaraswamy' );
 ```
 
 #### kumaraswamy( a, b )
@@ -126,7 +138,7 @@ The function accepts the following `options`:
 To use a custom PRNG as the underlying source of uniformly distributed pseudorandom numbers, set the `prng` option.
 
 ```javascript
-import minstd from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-minstd@esm/index.mjs';
+var minstd = require( '@stdlib/random-base-minstd' );
 
 var rand = kumaraswamy.factory({
     'prng': minstd.normalized
@@ -392,13 +404,8 @@ var o = rand.toJSON();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import kumaraswamy from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-kumaraswamy@esm/index.mjs';
+```javascript
+var kumaraswamy = require( '@stdlib/random-base-kumaraswamy' );
 
 var seed;
 var rand;
@@ -425,10 +432,6 @@ rand = kumaraswamy.factory( 2.0, 2.0, {
 for ( i = 0; i < 100; i++ ) {
     console.log( rand() );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -460,7 +463,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -490,8 +493,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/random-base-kumaraswamy.svg
 [npm-url]: https://npmjs.org/package/@stdlib/random-base-kumaraswamy
 
-[test-image]: https://github.com/stdlib-js/random-base-kumaraswamy/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/random-base-kumaraswamy/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/random-base-kumaraswamy/actions/workflows/test.yml/badge.svg?branch=v0.2.2
+[test-url]: https://github.com/stdlib-js/random-base-kumaraswamy/actions/workflows/test.yml?query=branch:v0.2.2
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/random-base-kumaraswamy/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/random-base-kumaraswamy?branch=main
@@ -525,15 +528,15 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [kumaraswamy]: https://en.wikipedia.org/wiki/Kumaraswamy_distribution
 
-[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32/tree/esm
+[@stdlib/array/uint32]: https://github.com/stdlib-js/array-uint32
 
 <!-- <related-links> -->
 
-[@stdlib/random/array/kumaraswamy]: https://github.com/stdlib-js/random-array-kumaraswamy/tree/esm
+[@stdlib/random/array/kumaraswamy]: https://github.com/stdlib-js/random-array-kumaraswamy
 
-[@stdlib/random/iter/kumaraswamy]: https://github.com/stdlib-js/random-iter-kumaraswamy/tree/esm
+[@stdlib/random/iter/kumaraswamy]: https://github.com/stdlib-js/random-iter-kumaraswamy
 
-[@stdlib/random/streams/kumaraswamy]: https://github.com/stdlib-js/random-streams-kumaraswamy/tree/esm
+[@stdlib/random/streams/kumaraswamy]: https://github.com/stdlib-js/random-streams-kumaraswamy
 
 <!-- </related-links> -->
 
