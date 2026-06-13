@@ -1,4 +1,4 @@
-"use strict";var o=function(r,e){return function(){return e||r((e={exports:{}}).exports,e),e.exports}};var y=o(function(_,d){
+"use strict";var o=function(r,e){return function(){try{return e||r((e={exports:{}}).exports,e),e.exports}catch(t){throw (e=0, t)}};};var y=o(function(_,d){
 var f=require('@stdlib/assert-is-positive-number/dist').isPrimitive,c=require('@stdlib/error-tools-fmtprodmsg/dist');function B(r,e){return f(r)?f(e)?null:new TypeError(c('0oX72',e)):new TypeError(c('0oX71',r));}d.exports=B
 });var w=o(function($,h){
 var q=require('@stdlib/math-base-special-pow/dist');function C(r,e,t){var i=r();return q(1-q(1-i,1/t),1/e)}h.exports=C
